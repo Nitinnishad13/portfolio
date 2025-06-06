@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://kit.fontawesome.com/9348c4770d.js" crossorigin="anonymous"></script>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, i'm <span>Nitin nishad ki jaan <br> anjali</span><br>Nitin from Lucknow</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+             <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image.jpg" alt="">
+                </div>
+                 <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus quia in, ipsam harum aliquam cum nemo neque necessitatibus ipsum iste repellat quaerat dignissimos ratione eos cupiditate sequi dolorem, illo sed amet! Laborum, doloremque ducimus ad eius excepturi eveniet veritatis, ipsam placeat dicta libero, fugit consectetur dolore aliquam amet molestiae magnam!</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"onclick="opentab('skills')">Skill</p>
+                         <p class="tab-links" onclick="opentab('experiance')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                         <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                            <li><span>Web Development</span><br>Designing Web/App interface</li>
+                            <li><span> Web App Development</span><br>Building Android/IOS apps</li>
+                         </ul>
+                    </div>
+                     <div class="tab-contents" id="experiance">
+                         <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                            <li><span> Development</span><br>Designing Web/App interface</li>
+                            <li><span> Web App Development</span><br>Building Android/IOS apps</li>
+                         </ul>
+                    </div>
+                     <div class="tab-contents" id="education">
+                         <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                            <li><span>Web Development</span><br>Designing Web/App interface</li>
+                            <li><span> Web App Development</span><br>Building Android/IOS apps</li>
+                         </ul>
+                    </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+    <!-- services -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde provident id ad, veniam quaerat facilis inventore consequuntur recusandae optio non!</p>
+                    <a href="">Learn more</a>
+                </div>
+                 <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde provident id ad, veniam quaerat facilis inventore consequuntur recusandae optio non!</p>
+                    <a href="">Learn more</a>
+                </div>
+                 <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde provident id ad, veniam quaerat facilis inventore consequuntur recusandae optio non!</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!--    portfolio  -->
+         <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                   <div class="work">
+                    <img src="images/work1.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, sunt?</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                   </div>
+                    <div class="work">
+                    <img src="images/work2.jpg">
+                    <div class="layer">
+                        <h3>music App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, sunt?</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                   </div>
+                    <div class="work">
+                    <img src="images/work3.avif">
+                    <div class="layer">
+                        <h3>e-com App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, sunt?</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                   </div>
+                </div>
+                <a href="" class="btn">See More</a>
+            </div>
+         </div>
+
+         <!-- contact -->
+          <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-share-from-square"></i>contact@example.com</p>
+                        <p><i class="fa-solid fa-phone-flip"></i>1234567890</p>
+                        
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                             <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                              <a href=""><i class="fa-brands fa-instagram"></i></a>
+                               <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/NITIN.resume.pdf" download  class="btn btn2">Download CV</a>
+                    </div>
+                     <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                           <input type="text" name="Name" placeholder="Your Name" required>
+                           <input type="email" name="Email" placeholder="Your Email" required>
+                           <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                           <button type="submit" class="btn btn2">Submit</button>
+                           <span id="form-msg"></span>
+                        </form>
+
+                          <!-- <form id="myForm">
+                          <input type="text" name="name" placeholder="Name" required><br><br>
+                          <input type="email" name="email" placeholder="Email" required><br><br>
+                          <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+                          <button type="submit" class="btn btn2">Send</button>
+                          </form> -->
+                          
+                        <!-- <span id="msg">hello</span> -->
+                     </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright @ Nitin nishad, Web Developer</p>
+            </div>
+          </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+         event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+
+    <script>
+        
+/*const scriptURL = 'https://script.google.com/macros/s/AKfycbxsTEb54pAY_wDVyZqQpuJ8qY1JYtjmaUcE9yq-4eQcugJSoLr9pLi1h_603kiaJ2gm/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  }) */
+     
+
+
+ const scriptURL = 'https://script.google.com/macros/s/AKfycbw-FKvSvKCtbMt4j8gwB8QRWKYJC7LytjtE0-OqI1631QmwjGdnckbgv_HbqwCmRh3s/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById('form-msg');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  //fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+
+    /*.then(response => {
+      msg.innerHTML = "✅ Message sent successfully!";
+      form.reset();
+     
+    })
+    .catch(error => {
+      msg.innerHTML = "❌ Error sending message. Please try again.";
+      console.error('Error!', error.message);
+    });*/
+    .then(response => {
+  msg.innerHTML = "✅ Message sent successfully!";
+  form.reset();
+
+  // Remove the message after 3 seconds
+  setTimeout(() => {
+    msg.innerHTML = "";
+  }, 3000); // 3000 milliseconds = 3 seconds
+})
+.catch(error => {
+  msg.innerHTML = "❌ Error sending message. Please try again.";
+  console.error('Error!', error.message);
+
+  // Remove the error message after 5 seconds
+  setTimeout(() => {
+    msg.innerHTML = "";
+  }, 5000); // You can adjust the time as needed
+});
+
+});
+
+
+</script>
+   
+</body>
+</html>
